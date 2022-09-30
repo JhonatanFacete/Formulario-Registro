@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+          <a href="javascript:void(0)" class="d-flex align-items-center text-dark text-decoration-none">
+            <i class="bi bi-person-check me-2" style="font-size: 46px;"></i>
+            <span class="fs-4">Formulario de Registro – Jhonatan Facete</span>
+          </a>
+        </header>
+      
+        <main>
+          
+
+          <div class="row g-5">
+
+            <div class="col-md-12 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white"><i class="bi bi-people me-2" style="font-size: 56px;"></i> REGISTRO</div>
+                    <div class="card-body">
+                        <!-- Body -->
+                        <form id="FormDatos">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Nombre</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" ><i class="bi bi-pen"></i></span>
+                                    <input type="text" class="form-control" id="nombre" onchange="javascript:this.value=this.value.toUpperCase()">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Apellido</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-pen"></i></span>
+                                    <input type="text" class="form-control" id="apellido" onchange="javascript:this.value=this.value.toUpperCase()">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Genero</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="genero" id="genero1" value="Masculino">
+                                    <label class="form-check-label" for="genero1">Masculino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="genero" id="genero2" value="Femenino">
+                                    <label class="form-check-label" for="genero2">Femenino</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Edad</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" ><i class="bi bi-123"></i></span>
+                                    <input type="number" class="form-control" id="edad">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Dirección</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" ><i class="bi bi-geo-alt"></i></span>
+                                    <input type="text" class="form-control" id="direccion">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Celular</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" ><i class="bi bi-phone"></i></span>
+                                    <input type="number" class="form-control" id="celular">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">País</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" ><i class="bi bi-globe"></i></span>
+                                    <select class="form-control" id="pais">
+                                        <option value="">[ Seleccionar ]</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Panamá">Panamá</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Ciudad</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" ><i class="bi bi-globe"></i></span>
+                                    <input type="text" class="form-control" id="ciudad">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">Correo Electrónico</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input type="mail" class="form-control" id="correo" onchange="javascript:this.value=this.value.toLowerCase()">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label">ID usuario</label>
+                                <div class="input-group mb-0">
+                                    <span class="input-group-text"><i class="bi bi-person-bounding-box"></i></span>
+                                    <input type="number" class="form-control" id="usuario">
+                                </div>
+                                <small>Campo numérico y único por usuario<br>Campos mínimo: 4<br>Campos Máximo: 10</small>
+                            </div>
+
+                            <div class="col-md-8 mb-3 pt-4 text-center">
+                                <button type="button" class="btn btn-success" onclick="Guardar()">Guardar <i class="bi bi-check2-circle"></i></button>
+                                <button type="button" class="btn btn-info" onclick="Listar()">Listar <i class="bi bi-arrow-repeat"></i></button>
+
+                                <div class="spinner-border text-primary" id="load" role="status">
+                                    <span class="visually-hidden">Cargando...</span>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <!-- End Body -->
+                    </div>
+                </div>
+            </div><!-- End Col -->
+
+
+            <div class="col-md-12 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-warning text-white"><i class="bi bi-list-check me-2"></i> LISTADO</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-home">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Usuario</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Genero</th>
+                                      <th scope="col">Edad</th>
+                                      <th scope="col">Dirreción</th>
+                                      <th scope="col">Celular</th>
+                                      <th scope="col">País</th>
+                                      <th scope="col">Ciudad</th>
+                                      <th scope="col">Email</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="TablaDatos">
+                                    <tr>
+                                        <td colspan="10" class="text-center">No hay datos registrados <i class="bi bi-emoji-sunglasses"></i></td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+
+                        <h4 class="text-center" id="CantidadRegistros"></h4>
+                    </div>
+                </div>
+            </div><!-- End Col -->
+
+          </div><!-- End Row -->
+        </main>
+        <footer class="pt-5 my-5 text-muted border-top">
+          Creado por el estudiante: Jhonatan Facete &middot; &copy; 2022
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> 
+    <script src="js/script.js"></script>
+</body>
+</html>

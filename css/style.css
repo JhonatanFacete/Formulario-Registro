@@ -1,0 +1,10 @@
+#load {
+    position: fixed;
+    z-index: 5;
+    left: 50%;
+    top: 44%;
+    display: none;
+}
+table.table-home tbody{
+    font-size: 12px;
+}
